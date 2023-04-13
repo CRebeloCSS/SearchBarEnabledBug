@@ -20,5 +20,12 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private void searchBar_SearchButtonPressed(object sender, EventArgs e)
+    {
+		//Workaround to force out Keyboard
+        searchBar.IsVisible = false;
+        searchBar.IsVisible = true;
+    }
 }
 

@@ -9,9 +9,12 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <!-- Search Bar, IsEnabled=False for demonstration purposes -->
             <SearchBar
+                x:Name="searchBar"
                 Placeholder="Search Placeholder"
-                IsEnabled="False"/>
+                IsEnabled="False"
+                SearchButtonPressed="searchBar_SearchButtonPressed"/>
             
             <Image
                 Source="dotnet_bot.png"
